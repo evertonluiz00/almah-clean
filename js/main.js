@@ -1,16 +1,10 @@
 const waNumber = "554731802477";
 const waMessage = "Olá! Quero agendar uma higienização com a Almah Clean.";
 const waLink = "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(waMessage);
-["waNav","waHero","waFinal","waFooter","waFab"].forEach(id => {
-  const el = document.getElementById(id);
-  if(el) el.href = waLink;
-});
+document.querySelectorAll('[data-wa]').forEach(el => { el.href = waLink; });
 
 const igLink = "https://instagram.com/almahclean";
-["igNav","igFinal","igFooter","igFab"].forEach(id => {
-  const el = document.getElementById(id);
-  if(el) el.href = igLink;
-});
+document.querySelectorAll('[data-ig]').forEach(el => { el.href = igLink; });
 
 const nav = document.getElementById('siteNav');
 window.addEventListener('scroll', () => {

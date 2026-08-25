@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Almah Clean — Pureza que transforma ambientes</title>
+  <title>Almah Clean - Pureza que transforma ambientes</title>
 
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
@@ -19,9 +19,9 @@
   
   <script src="js/main.js" defer></script>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) — loader de terceiros; a configuracao esta em js/analytics.js -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18408564787"></script>
-  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-18408564787'); </script>
+  <script src="js/analytics.js" defer></script>
 </head>
 <body>
 
@@ -65,10 +65,10 @@
       <a href="#como-funciona">Como funciona</a>
     </nav>
     <div class="nav-actions">
-      <a class="icon-btn ig-icon" id="igNav" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+      <a class="icon-btn ig-icon" data-ig="nav" href="#" target="_blank" rel="noopener" aria-label="Instagram">
         <svg viewBox="0 0 24 24"><use href="#i-instagram"/></svg>
       </a>
-      <a class="nav-cta" id="waNav" href="#" target="_blank" rel="noopener">
+      <a class="nav-cta" data-wa="nav" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><use href="#i-whatsapp"/></svg>
         WhatsApp
       </a>
@@ -83,7 +83,7 @@
       <h1>Pureza que <span>transforma</span> ambientes.</h1>
       <p class="lead">Sofás, colchões, poltronas, cadeiras e bancos de carro higienizados com extração profunda — sem encharcar o tecido, sem estragar a estrutura, sem sujeira escondida.</p>
       <div class="hero-ctas">
-        <a class="btn-primary" id="waHero" href="#" target="_blank" rel="noopener">
+        <a class="btn-primary" data-wa="hero" href="#" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><use href="#i-whatsapp"/></svg>
           Agendar no WhatsApp
         </a>
@@ -275,11 +275,11 @@
     <h2>Bora marcar sua higienização?</h2>
     <p>Manda uma mensagem no WhatsApp Business ou segue a Almah Clean no Instagram pra ver os próximos trabalhos.</p>
     <div class="final-ctas">
-      <a class="btn-primary" id="waFinal" href="#" target="_blank" rel="noopener">
+      <a class="btn-primary" data-wa="final" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><use href="#i-whatsapp"/></svg>
         Chamar no WhatsApp
       </a>
-      <a class="btn-secondary" id="igFinal" href="#" target="_blank" rel="noopener">
+      <a class="btn-secondary" data-ig="final" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="var(--navy)" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
         Ver no Instagram
       </a>
@@ -297,10 +297,10 @@
       <div class="footer-tag">Pureza que transforma ambientes</div>
     </div>
     <div class="footer-social">
-      <a class="icon-btn" id="waFooter" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <a class="icon-btn" data-wa="footer" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
         <svg viewBox="0 0 24 24" fill="var(--white)" width="17" height="17"><use href="#i-whatsapp"/></svg>
       </a>
-      <a class="icon-btn ig-icon" id="igFooter" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+      <a class="icon-btn ig-icon" data-ig="footer" href="#" target="_blank" rel="noopener" aria-label="Instagram">
         <svg viewBox="0 0 24 24"><use href="#i-instagram"/></svg>
       </a>
     </div>
@@ -312,11 +312,11 @@
 </footer>
 
 <div class="fab-stack">
-  <a class="fab ig" id="igFab" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+  <a class="fab ig" data-ig="fab" href="#" target="_blank" rel="noopener" aria-label="Instagram">
     <svg viewBox="0 0 24 24"><use href="#i-instagram"/></svg>
     <span class="fab-text">Instagram</span>
   </a>
-  <a class="fab wa" id="waFab" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <a class="fab wa" data-wa="fab" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>
     <span class="fab-text">WhatsApp</span>
   </a>
